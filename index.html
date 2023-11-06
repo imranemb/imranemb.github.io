@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="div_color_1" >
+        <div class="container" >
+
+            <nav class="navbar navbar-expand-lg color_w nav_color complete_nav_margin">
+
+                <a class="navbar-brand nav_brand fw-bold nav_brand_size" href="#">Imrane M.</a>
+
+                <div class="ms-auto">
+
+
+                    <button onclick=togglefunction() class="navbar-toggler bg-outline-light" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span id="toggler" class="navbar-toggler-icon navbar-dark icon_size"
+                            style="color: #d1d5db;"></span>
+                    </button>
+                    <div class="collapse navbar-collapse me-2" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link nav_brand fw-medium nav_elements_size me-2" aria-current="page"
+                                    href="#about">A
+                                    propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav_brand fw-medium nav_elements_size me-2" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav_brand fw-medium nav_elements_size me-2" href="#education">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav_brand fw-medium nav_elements_size me-2" href="#projet">Projet</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav_brand fw-medium nav_elements_size me-2" href="#contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link nav_brand fw-medium nav_elements_size me-2 divider_color"
+                                    href="#">|</span>
+                            </li>
+                            <li class="nav-item me-2">
+                                <button onclick=mode() class="nav-link nav_brand fw-medium me-2 divider_color"
+                                    href="#"><i id="toggler_2" class="fa-solid fa-sun fa-2xl" style="color: #f9fafb;animation: roundo 45s infinite;"></i></button>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a href="images/CV_français_2.pdf" download>
+                                <button id="download"  class="nav_link btn btn-light fw-medium nav_elements_size_2 me-4" style="animation: wave 10s infinite;" type="button"
+                                    style="border-radius:12px;" attribute="download" download>Download CV</button></a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+    </nav>
+    </div>
+    </div>
+    
+    <div class="div_color_1">
+        <!--<script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.489/build/spline-viewer.js"></script>
+        <spline-viewer style="z-index: 1;" url="https://prod.spline.design/tvhMsmideSlcu9yt/scene.splinecode"></spline-viewer>-->
+        <div class="container container-expand-sm ">
+            
+            <div
+                class="row d-flex justify-content-between align-items-start align-self-stretch flex_after_navbar gap-3">
+                
+                <div id="row_1"
+                    class="col d-flex flex-column justify-content-center align-items-start align-self-stretch" style="">
+
+                    <h1 class="fw-bold lh-lg title_in_container" >Hi, I'm Imrane <span class="wave-emoji">👋</span></h1>
+
+                    <p class="nav_elements_size lh-base p_in_container" style="max-width: 768px;"> Je suis un étudiant en informatique possédant des 
+                        connaissances transverses notamment en développement web. Une véritable passion qui se renouvelle à chaque fois que 
+                        je fais face à mon ordinateur. 
+                    </p>
+
+                    <p class="p_in_container mt-5"><i class="fa-solid fa-location-dot"
+                            style="color: #d1d5db; margin-right:8px;"></i>Nanterre, France</p>
+                    <p class="p_in_container mb-5"><i class="fa-solid fa-circle"
+                            style="color: #10b981; margin-right:8px;"></i>Disponible pour un(e) stage/alternance</p>
+                </div>
+
+                <div id="row_2"
+                    class="col d-flex flex-column justify-content-start align-items-center align-self-stretch " style="">
+
+
+                    <img style="object-fit: cover;" width="280" height="320" 
+                        src="images/new2.jpg"
+                        alt="">
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="div_color_2">
+        <div id ="about" class="container container-expand-sm container_2">
+            <div class="d-flex justify-content-center align-items-center">
+                <p class="fw-medium title_in_container_2 py-1 my-5">About me</p>
+            </div>
+            <div class="row d-flex justify-content-between align-items-start align-self-stretch gap-5">
+                <div class="col d-flex flex-column align-items-center gap-3 align-self-stretch">
+                    <img class="img_size_2" style="object-fit: cover;"
+                        src="images/new3.jpg"
+                        alt="">
+                </div>
+                <div class="col d-flex flex-column align-items-start gap-3 align-self-stretch">
+
+                    <h1 class="fw-semibold title_sub_container_2">Curieux à mon propos ?</h1>
+                    <p class="lh-base fs-6 p_container_2 ">Je suis une personne enthousiaste, optimiste, autonome et perséverante.
+                        Ma nature curieuse me pousse à explorer de nouvelles idées et à rechercher des solutions créatives aux problèmes rencontrés.
+                        J'ajoute que j'ai un goût prononcé pour les défis et suis constamment motivé pour les relever.
+                    </p>
+                    <p class="lh-base fs-6 p_container_2 ">Je suis un penseur progressiste et j'aime travailler sur des produits de bout en bout, de l'idéation au développement.
+                    </p>
+                    <p class="lh-base fs-6 p_container_2 ">Et j'espère aussi inventer un jour quelque chose qui sera utile
+                        et qui répondra aux différents besoins des gens dans le monde entier, comme l'ont fait Bill Gates, Elon Musk et bien d'autres avant moi.</p>
+                    <p class="lh-base fs-6 p_container_2 ">Cependant quand je ne suis pas en mode développeur à part entière, mes centres d'intêrets sont orientés
+                        vers la natation, la boxe, sports automobiles, la salle ainsi que prendre l'air...</p>
+                    
+                    
+                    
+                    <p class="lh-base fs-6 p_container_2 ">Une dernière chose, je suis disponible pour travailler, alors n'hésitez pas à me contacter et à me dire bonjour !</p>
+                    <p class="lh-base fs-6 p_container_2 ">Je promets que je ne mords pas 😉</p>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="div_color_1">
+        <div id="skills" class="container flex_after_navbar" style="padding:0px;">
+            <div class="d-flex justify-content-center align-items-center">
+                <p class="fw-medium title_in_container_2 py-1 my-3">Skills</p>
+            </div>
+            <p class="p_container_3 mb-5 text-center">Les compétences, les outils et les technologies que je maîtrise le mieux :</p>
+
+            <div class="row mb-5">
+
+                <div class="col d-flex flex-column justify-content-center align-items-center align-self-stretch">
+
+                    <img class="" src="https://sagarshah.dev/_next/static/media/icon-javascript.d5945e90.svg" alt="">
+                    <p class="p_container_3">Javascript</p>
+
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center align-self-stretch">
+
+                    <img class="" src="https://sagarshah.dev/_next/static/media/icon-react.f09634b9.svg" alt="">
+                    <p class="p_container_3">ReactJS</p>
+
+                </div>
+                
+                
+                <div class="col d-flex flex-column justify-content-center align-items-center align-self-stretch">
+
+                    <img class="" src="https://sagarshah.dev/_next/static/media/icon-mongodb.e1664f55.svg" alt="">
+                    <p class="p_container_3">MongoDB</p>
+
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center align-self-stretch">
+
+                    <img class="" width ="64" height="64" src="images/sql.svg" alt="">
+                    <p class="p_container_3">SQL</p>
+
+                </div>
+                
+                <div class="col d-flex flex-column justify-content-center align-items-center align-self-stretch">
+
+                    <img class="" width ="64" height="64" src="images/symfony.svg" alt="">
+                    <p class="p_container_3">Symfony</p>
+
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center align-self-stretch">
+
+                    <img class="" width ="64" height="64" src="images/bootstrap.svg" alt="">
+                    <p class="p_container_3">Bootstrap</p>
+
+                </div>
+                <!--
+                <div class="col d-flex flex-column justify-content-center align-items-center align-self-stretch">
+
+                    <img class="" src="https://sagarshah.dev/_next/static/media/icon-javascript.d5945e90.svg" alt="">
+                    <p class="p_container_3">Javascript</p>
+
+                </div>
+
+
+            </div>
+--
+            <div class="row">
+
+                <div class="col d-flex flex-column justify-content-center align-items-center align-self-stretch">
+
+                    <img class="" src="https://sagarshah.dev/_next/static/media/icon-javascript.d5945e90.svg" alt="">
+                    <p class="p_container_3">Javascript</p>
+
+                </div>
+
+                <div class="col d-flex flex-column justify-content-center align-items-center align-self-stretch">
+
+                    <img class="" src="https://sagarshah.dev/_next/static/media/icon-javascript.d5945e90.svg" alt="">
+                    <p class="p_container_3">Javascript</p>
+
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center align-self-stretch">
+
+                    <img class="" src="https://sagarshah.dev/_next/static/media/icon-javascript.d5945e90.svg" alt="">
+                    <p class="p_container_3">Javascript</p>
+
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center align-self-stretch">
+
+                    <img class="" src="https://sagarshah.dev/_next/static/media/icon-javascript.d5945e90.svg" alt="">
+                    <p class="p_container_3">Javascript</p>
+
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center align-self-stretch">
+
+                    <img class="" src="https://sagarshah.dev/_next/static/media/icon-javascript.d5945e90.svg" alt="">
+                    <p class="p_container_3">Javascript</p>
+
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center align-self-stretch">
+
+                    <img class="" src="https://sagarshah.dev/_next/static/media/icon-javascript.d5945e90.svg" alt="">
+                    <p class="p_container_3">Javascript</p>
+
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center align-self-stretch">
+
+                    <img class="" src="https://sagarshah.dev/_next/static/media/icon-javascript.d5945e90.svg" alt="">
+                    <p class="p_container_3">Javascript</p>
+
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center align-self-stretch">
+
+                    <img class="" src="https://sagarshah.dev/_next/static/media/icon-javascript.d5945e90.svg" alt="">
+                    <p class="p_container_3">Javascript</p>
+
+                </div>
+
+
+            </div>
+
+-->
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="div_color_2">
+
+        <div id="education" class="container container_2">
+
+            <div class="d-flex justify-content-center align-items-center">
+                <p class="fw-medium title_in_container_2 py-1 my-3">Education</p>
+            </div>
+            <p class="p_container_3 mb-5 text-center">Voici un bref résumé de mon parcours :</p>
+
+            <div class="row row_style_container_4 gap-5">
+
+                <div class="col" style="max-height:30px;">
+
+
+                    <img width="105"  src="images/hexagone.png" alt="">
+
+
+
+                </div>
+
+
+                <div id="row_3" class="col" style="">
+
+                    <p class="fw-semibold fs-5 title_in_container_4">Bachelor 2</p>
+
+                    <ul class="list_in_container_4">
+
+                        <li>Approfondissement des fondamentaux de l'informatique</li>
+                        <li>Bootstrap, Design Thinking, MongoDB, Symfony, ReactJS, SQL Server, Stormshield, ...</li>
+
+
+                    </ul>
+
+
+                </div>
+
+
+
+                <div id="row_4" class="col" style="max-height:30px;">
+
+                    <p class="list_in_container_4 text-end">2023 - 2024</p>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+            <div class="row row_style_container_4 gap-5 mt-5">
+
+                <div class="col" style="max-height:30px;">
+
+
+                    <img width="105" src="images/esgi.png" alt="">
+
+
+
+                </div>
+
+
+                <div id="row_5" class="col" style="">
+
+                    <p class="fw-semibold fs-5 title_in_container_4">Bachelor 1</p>
+
+                    <ul class="list_in_container_4">
+
+                        <li>Acquisitions des fondamentaux de l'informatique</li>
+                        <li>HTML, CSS, PHP, Javascript, SQL, Linux avancé, Réseaux, Algorithmique, Langage C, ...</li>
+
+
+                    </ul>
+
+
+                </div>
+
+
+
+                <div id="row_6" class="col" style="max-height:30px;">
+
+                    <p class="list_in_container_4 text-end">2022-2023</p>
+                    
+                    </div>
+
+                    
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+    <div class="div_color_1">
+
+        <div id="projet" class="container flex_after_navbar">
+
+        <div class="d-flex justify-content-center align-items-center">
+            <p class="fw-medium title_in_container_2 py-1 my-3">Projet</p>
+        </div>
+        <p class="p_container_3 mb-5 text-center">Un projet remarquable que j'ai réalisé :</p>
+
+        <div class="row">
+            <div class="col col_design_container_5_left p-5">
+
+
+                <img class="img_size_container_5" src="images/primx.png" alt="">
+
+
+
+            </div>
+
+            <div class="col col_design_container_5_right p-5 gap-4">
+
+
+                <p class="fs-5 fw-semibold title_in_container_4">primXperience</p>
+                <p id="color_prim" class="fs-6 lh-base" style="color: #D1D5DB">Création d'une plateforme de conciergerie proposant des services de luxe pour les plus aisés, en ligne.</p>
+
+                    <div class="d-flex flex-wrap gap-2">
+                        <p class="fw-medium title_in_container_2 py-1 ">HTML/CSS</p>
+                       
+                        <p class="fw-medium title_in_container_2 py-1 ">Bootstrap</p>
+                        <p class="fw-medium title_in_container_2 py-1 ">PHP</p>
+                    </div>
+            </div>
+
+        </div>
+
+    </div>
+
+<div class="div_color_2">
+    <div id="contact" class="container container_2">
+
+        <div class="d-flex justify-content-center align-items-center">
+            <p class="fw-medium title_in_container_2 py-1 my-3">Get in touch</p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+        <p class="fs-5 text-center p_last_container" style="max-width: 576px;">Quelles sont les prochaines étapes ? N'hésitez pas à me contacter si vous êtes à la recherche d'un développeur, si vous avez une question ou si vous souhaitez simplement prendre contact.</p>
+       </div>
+        <div class="row justify-content-center gap-3">
+        
+        <p id="last" class="fs-size p_last_container text-center fw-semibold mt-5"><i style="animation: wave 4s infinite;" class="fa-regular fa-envelope fa-sm" style="color: #d1d5db;"></i><span id="email" class="margin-l" >imranentv92@outlook.com</span><button id="last_3" onclick=copy_button_one() class="fa-regular fa-clone fa-flip-vertical" style="color: #d1d5db; background-color: transparent; border-color: transparent;"></button></p>
+        <p id="last_2" class="fs-size p_last_container text-center fw-semibold"><i style="animation: wave 4s infinite;" class="fa-solid fa-phone" style="color: #d1d5db;"></i><span id="number" class="margin-l" >+33 785327681</span><button onclick=copy_button_two() id="last_4" class="fa-regular fa-clone fa-flip-vertical" style="color: #d1d5db; background-color: transparent; border-color: transparent;"></button></p>
+
+    </div>
+    </div>
+</div>
+
+
+
+<div class="d-flex justify-content-center align-items-center">
+<span class="text-center p_last_container">2023 | Coder avec ❤️️ par Imrane Mebitil</span>
+</div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0df82ae8c0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
